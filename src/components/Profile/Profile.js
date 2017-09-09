@@ -2,12 +2,21 @@ import React, { Component } from "react";
 
 class Profile extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "Victor Velazquez",
+      email: "velazquezgaspar16@gmail.com",
+      avatar: "https://avatars2.githubusercontent.com/u/969187?v=4&s=460"
+    }
+  }
+
   render() {
     return (
-      <section>
-        <img src="https://avatars2.githubusercontent.com/u/969187?v=4&s=460" width="200px"/>
-        <p>Victor Velazquez</p>
-        <p>velazquezgaspar16@gmail.com</p>
+      <section style={{ maxWidth: "200" }}>
+        <img src={ this.state.avatar }   width="200px"/>
+        <p>{ this.state.name }</p>
+        <p>{ this.state.email }</p>
       </section>
     );
   }
