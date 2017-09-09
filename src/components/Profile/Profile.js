@@ -13,7 +13,7 @@ class Profile extends Component {
 
   render() {
     return (
-      <section style={{ maxWidth: "200" }}>
+      <section style={ { maxWidth: 200 } }>
         <img src={ this.state.avatar }   width="200px"/>
         <p>{ this.state.name }</p>
         <p>{ this.state.email }</p>
